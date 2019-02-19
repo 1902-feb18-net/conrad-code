@@ -16,18 +16,19 @@ namespace Shapes.UI
                 Radius = 5,
             };
 
-            shapes[1] = new Square
+            shapes[1] = new Rectangle
             {
                 Name = "Julie",
                 Color = "Red",
-                SideLength = 3,
+                Length = 5,
+                Width = 5,
             };
 
             Circle circle = (Circle)shapes[0];
             Console.WriteLine($"The Cicumference and Area of {circle.Name} are {circle.CalculateCircum()} " +
                 $"and {circle.CalculateArea()}");
 
-            Square square = (Square)shapes[1];
+            Rectangle square = (Rectangle)shapes[1];
             Console.WriteLine($"The Perimeter and Area of {square.Name} are {square.CalculatePerim()} " +
                 $"and {square.CalculateArea()}");
         }

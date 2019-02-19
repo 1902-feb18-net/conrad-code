@@ -4,22 +4,23 @@ using System.Text;
 
 namespace Shapes.Library
 {
-    public class Square : IShapes
+    public class Rectangle : IShapes
     {
         public string Name { get; set; }
         public string Color { get; set; }
         public int NumSides { get; set; } = 4;
 
-        public double SideLength { get; set; } = 0;
+        public double Length { get; set; }
+        public double Width { get; set; }
 
         public double CalculateArea()
         {
-            return Math.Pow(SideLength, 2);
+            return Length * Width;
         }
 
         public double CalculatePerim()
         {
-            return 4 * SideLength;
+            return 2 * Length + 2 * Width;
         }
     }
 }
