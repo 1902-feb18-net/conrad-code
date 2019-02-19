@@ -59,8 +59,8 @@ namespace MoreAnimals.UI
             {
                 Console.WriteLine(item.Name);
                 item.MakeNoise();
-                item.GoTo("Park"); // here we can't see Eagle.GoTo, whi only hides ABird.GoTo
-                                    // without overriding it
+                item.GoTo("Park"); // here we can't see Eagle.GoTo when using new
+                                   // works right when we properly override using virtual and override
             }
 
             Eagle eagle1 = (Eagle)animals[1];

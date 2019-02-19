@@ -14,7 +14,7 @@ namespace MoreAnimals.Library
 
         public abstract void MakeNoise();
 
-        public void GoTo(string location)
+        public virtual void GoTo(string location)
         {
             Console.WriteLine($"Flying to {location.ToLower()}");
         }

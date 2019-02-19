@@ -15,7 +15,14 @@ namespace MoreAnimals.Library
         }
 
         // Attempt to override the inherited "GoTo"
-        public void GoTo(string location)
+        // this is the bad way, just hiding child implementation
+        // shouldn't use hiding but if you do, use "new" extended modifier
+        //public new void GoTo(string location)
+        //{
+        //    Console.WriteLine($"I'm an Eagle Flying to {location}");
+        //}
+
+        public override void GoTo(string location)
         {
             Console.WriteLine($"I'm an Eagle Flying to {location}");
         }
